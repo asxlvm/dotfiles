@@ -113,3 +113,11 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+alias joinaudiovideo="ffmpeg -i $1 -i $2 -map 0:v -map 1:a -c:v copy -shortest $3"
+alias py="python"
+alias nv="nvim"
+
+export GIT_PAT="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"
+
+export PATH="/data/data/com.termux/files/usr/bin/glow:$PATH"
+export CLOUDSDK_PYTHON='python2.7'
